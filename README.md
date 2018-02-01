@@ -7,13 +7,9 @@
 
 # What is it ?  
 
-SenderBlocker allows Zimbra users to block incoming mails from given adresses.
+SenderBlocker allows Zimbra users to block or allow incoming mails from given adresses and/or domains.
 The zimlet acts as a shortcut to the account Black/WhiteList, therefore revolves around Zimbra's blacklisting function.
 
-# What's new ?  
-
- * User ability to block or unblock messages coming from given domains.
- 
 # To make use of this zimlet 
 
 * Select one or more messages.
@@ -23,3 +19,10 @@ The zimlet acts as a shortcut to the account Black/WhiteList, therefore revolves
 The sender(s) email address will be added to the corresponding list (You may
 need to refresh the browser in order for the changes to show up in the
 Preferences panel).
+
+# How to retrieve the list of blacklisted/whitelised senders
+
+Via the CLI for now:
+
+      zmprov ga user@example.com amavisBlacklistSender
+      zmprov ga user@example.com amavisWhitelistSender
